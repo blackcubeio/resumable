@@ -1,0 +1,77 @@
+{
+    "name": "blackcube/resumable",
+    "description": "Resumable.js server side for Yii: chunked upload, preview and delete actions on the temporary store of blackcube/fileprovider",
+    "keywords": [
+        "yii",
+        "resumable",
+        "upload",
+        "chunked-upload",
+        "fileprovider"
+    ],
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "readme": "README.md",
+    "homepage": "https://github.com/blackcubeio/resumable",
+    "support": {
+        "issues": "https://github.com/blackcubeio/resumable/issues",
+        "source": "https://github.com/blackcubeio/resumable"
+    },
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "philippe@blackcube.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "blackcube/fileprovider": "^1.0",
+        "psr/http-factory": "^1.1",
+        "psr/http-message": "^2.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/log": "^3.0",
+        "yiisoft/aliases": "^3.1",
+        "yiisoft/data-response": "^2.2",
+        "yiisoft/http": "^1.3"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.3",
+        "codeception/module-asserts": "^3.3",
+        "codeception/module-filesystem": "^3.0",
+        "codeception/module-phpbrowser": "^4.1",
+        "codeception/module-rest": "^3.4",
+        "intervention/image": "^3.11 || ^4.3",
+        "league/flysystem-aws-s3-v3": "^3.35",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "vlucas/phpdotenv": "^5.7"
+    },
+    "suggest": {
+        "blackcube/bleet": "Upload widget rendering the drop zone these actions serve",
+        "intervention/image": "Required for image thumbnails in the preview action"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blackcube\\Resumable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blackcube\\Resumable\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        },
+        "config-plugin-file": "config/configuration.php"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2"
+        }
+    }
+}
